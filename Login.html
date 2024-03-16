@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login page</title>
+	<script type="text/javascript" src="library.js"></script>
+	<style type="text/css">
+	body {
+           margin: 0;
+           padding: 0;
+           background-image: url("Images/login.jpg");
+           font-family: Arial, Helvetica, sans-serif;
+           background-size: cover;
+           background-position: center;
+           height: 100vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+               }
+		
+		form {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 100%;
+        }
+		
+		.btn{
+           background-color: green;
+           width: 86%;
+           opacity: 0.9;
+           color: white;
+           padding: 10px;
+		}
+		.btn:hover {
+              opacity: 1;
+        }
+
+        input[type=text], input[type=password] {
+        width: 86%;
+        padding: 10px;
+        margin: 5px 0 22px 0;
+       }
+	</style>
+</head>
+<body>	
+	   
+		   <form  method="get" class="add">
+				<center>
+					<h1>Login</h1>
+      				<label class="user" for="username"><b>Username</b></label><br>
+      				<input type="text" name="username" id="name" required placeholder="username" ><br><br>
+      			
+
+      			    <label class="user" for="pass"><b>Password</b></label><br>
+      		        <input type="password" name="pass" id="pass" required placeholder="password">
+      			    <br><br>
+
+                
+                	<button type="submit" class="btn" onclick="myfunction1()">Login</button>
+
+                	
+                </center>
+             </form>    
+       
+         
+
+</body>
+</html>

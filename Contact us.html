@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <script type="text/javascript" src="library.js"></script>  
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('Images/contact.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contact-info {
+      max-width: 400px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    .contact-info h2 {
+      margin-top: 0;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+
+    .contact-form {
+      max-width: 400px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    .contact-form h2 {
+      margin-top: 0;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    .contact-form textarea {
+      resize: none;
+      height: 150px;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .contact-info,
+      .contact-form {
+        max-width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+      <p><strong>Phone:</strong> +123 456 789</p>
+      <p><strong>Email:</strong> library23@example.com</p>
+    </div>
+    <div class="contact-form">
+      <h2>Send Message</h2>
+      <form>
+        <input type="text" name="fullname" id="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" id="ename" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Type your message here" required></textarea>
+        <button type="submit" onclick="myfunction3()">Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
